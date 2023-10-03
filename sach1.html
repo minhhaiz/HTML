@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <nav id="home">
+
+        <ul class="row">
+            <div class="col-md-4">
+                <li>
+                    <a href="index.html"> <i class="fas fa-arrow-left"></i></a><a href="#home">ĐỌC THỬ</a>
+                </li>
+            </div>
+            <div class="col-md-4 text-center">
+                <h3 style="color: white;">Độc Giả Thứ 7</h3>
+            </div>
+            <div class="col-md-4">
+                <li style="float:right;"><a href="#"><i class="fas fa-list"></i></a></li>
+                <li style="float:right;"><a href="#"><i class="far fa-bookmark"></i></a></li>
+
+                <li style="float:right;">
+                    <a href="#">
+                        <div id="fullscreen-button"><i class="fas fa-expand-arrows-alt"></div></i>
+                    </a>
+                </li>
+                <li style="float:right;"><a href="#home">Aa</a> </li>
+
+                </div>
+        </ul>
+        <script>
+            const fullscreenButton = document.getElementById("fullscreen-button");
+
+            fullscreenButton.addEventListener("click", () => {
+                if (document.documentElement.requestFullscreen) {
+                    document.documentElement.requestFullscreen();
+                } else if (document.documentElement.mozRequestFullScreen) { // Firefox
+                    document.documentElement.mozRequestFullScreen();
+                } else if (document.documentElement.webkitRequestFullscreen) { // Chrome, Safari và Opera
+                    document.documentElement.webkitRequestFullscreen();
+                } else if (document.documentElement.msRequestFullscreen) { // IE/Edge
+                    document.documentElement.msRequestFullscreen();
+                }
+            });
+        </script>
+    </nav>
+    <div class="container-fluid" style="position: relative; top: 70px;">
+        <div class="row">
+            <div class="col-md-3 cot1">
+                <ul class="nav" style="position: relative; top: 50px;">
+                    <li class="nav-item">
+                        <h4><b>Tác phẩm: độc giả thứ 7</b></h4>
+                    </li>
+                    <li class="nav-item">
+                        <h4><b>Tác giả: Lôi Mễ</b></h4>
+                    </li>
+                    <li class="nav-item">
+                        <h4><b>Với gói hội viên: 1000 vnđ/ngày</b></h4>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="btn btn-danger">Nâng cấp hội viên </button>
+                    </li>
+                    <li class="nav-item">
+                        <h4><b>Nội dung : ĐỌC THỬ </b></h4>
+                    </li>
+                    <li class="nav-item">
+                        <h4><b>Chương 1: Người chết đầu tiên</b></h4>
+                    </li>
+                    <li class="nav-item">
+                        <h4><b>Chương 2: Điều tra </b></h4>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <h4><b>Chương 3: Tôi là hung thủ </b></h4>
+                    </li>
+                    <li class="nav-item">
+                        <h4><b>Chương 4: Người chết thứ hai</b></h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner text-center">
+
+                        <div class="item active size-sl ">
+                            <img src="image/bias.png" alt="Bia" style="width:100%;">
+                            <div class="carousel-caption">
+
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="image/t12.png" alt="Chicago" style="width:100%;">
+                            <div class="carousel-caption">
+
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="image/tcuoi.png" alt="New York" style="width:100%;">
+                            <div class="carousel-caption">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+<footer>
+
+</footer>
+
+</html>

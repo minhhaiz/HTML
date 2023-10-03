@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>BOOK</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Tuỳ chỉnh kích thước và vị trí của nút "prev" và "next" */
+        .carousel-control-prev, .carousel-control-next {
+            width: 2%;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-size: 20px;
+            border-radius: 0;
+        }
+
+        /* Đặt màu cho nút "prev" và "next" */
+        .carousel-control-prev {
+            left: 0;
+        }
+
+        .carousel-control-next {
+            right: 0;
+        }
+
+        /* Tuỳ chỉnh màu sắc và biểu tượng của nút "prev" và "next" */
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            color: gray;
+        }
+    </style>
+  </head>
+
+  <body>
+    <nav id="home">
+      <ul>
+        <li><a href="#home">Trang chủ </a> > <li>
+            <li><a href="#home">Độc Giả Thứ 7</a> > </li>
+            <li><a href="#home">Tiểu thuyết, trinh thám</a></li>
+          </ul>
+        </nav>
+
+        <div class="container zzzz">
+          <div class="row">
+            <div class="col-md-4 font-to-hon ">
+              <img src="image\img3.png" class="img-fluid">
+              <div class="social text-center mt-4">
+                <i class="fas fa-star" style="color: #dff53c;"></i>
+                <i class="fas fa-star" style="color: #dff53c;"></i>
+                <i class="fas fa-star" style="color: #dff53c;"></i>
+                <i class="fas fa-star" style="color: #dff53c;"></i>
+                <i class="fas fa-star" style="color: #dff53c;"></i>
+
+
+                <p><b>Đánh giá sách</b></p>
+                <p><b>4.9/5(3250 votes)</b></p>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <h2>Độc Giả Thứ 7</h2>
+              <h5>Tác giả: Lôi Mễ</h5>
+              <h5>Thể loại: Tiểu thuyết, trinh thám, tâm lý tội phạm</h5>
+              <h5>Nhà xuất bản: NXB VĂN HỌC</h5>
+              <h5>Định dạng: Epub</h5>
+              <h5>Ngày cập nhật: 16/09/2023</h5>
+              <h5 id="mrbt">Gói cước áp dụng: Hội viên</h5>
+              <br>
+              <button type="button", class="button" ><a href="sach1.html">ĐỌC SÁCH</a></button>
+              <p>Khu ký túc xá nam sinh trong trường Đại học Sư phạm vốn luôn
+                tràn ngập những tiếng cười
+                nói rôm rả của những chàng trai trẻ tràn đầy nhiệt huyết. Bỗng
+                nhiên, một cậu nam sinh
+                bị giết hại, bầu không khí hoang mang lo sợ bao trùm khắp ngôi
+                trường. Nhưng vụ án này
+                mới chỉ là mở màn cho những vụ án giết người thảm khốc tiếp
+                theo.
+
+                Nguyên nhân vì đâu? Phương Mộc – chàng sinh viên có khả năng cảm
+                nhận được diễn biến tâm
+                lý của hung thủ đã phát hiện ra, những nạn nhân đều có tên trong
+                tấm thẻ mượn sách chết
+                chóc. Liệu anh có thể kịp thời ngăn chặn tội ác của hung thủ hay
+                không? Liệu anh sẽ xử
+                trí ra sao khi đối diện với tên hung thủ tàn ác?</p>
+              <button type="button", id="btn_2">Xem thêm>></button>
+
+            </div>
+
+            <div class="col-md-12">
+              <h2>Sách cùng tác giả</h2>
+
+              <div id="productSlider" class="carousel slide"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row ">
+                      <div class="col-md-3 ">
+                        <div class="card mb-2 border-0">
+                          <img src="image\5.jpg" class="card-img-top img-fluid"
+                            style="margin: auto;">
+                          <div class="card-body text-center">
+                            <h5 class="card-title">Đề thi đẫm máu</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card mb-2 border-0">
+                          <img src="image\7.jpg" class="card-img-top img-fluid"
+                            style="margin: auto;">
+                          <div class="card-body text-center">
+                            <h5 class="card-title">Sông ngầm</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card mb-2 border-0">
+                          <img src="image\3.jpg" class="card-img-top img-fluid"
+                            style="margin: auto;">
+                          <div class="card-body text-center">
+                            <h5 class="card-title">Ánh sáng thành phố</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card mb-2 border-0">
+                          <img src="image\6.jpg" class="card-img-top img-fluid"
+                            style="margin: auto;">
+                          <div class="card-body text-center">
+                            <h5 class="card-title">Cuông vọng phi nhân tính</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="card mb-2 border-0">
+                          <img src="image\4.jpg" class="card-img-top img-fluid"
+                            style="margin: auto;">
+                          <div class="card-body text-center">
+                            <h5 class="card-title">Tâm Nguyện cuối cùng </h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card mb-2 border-0">
+                          <img src="image\10.jpg" class="card-img-top img-fluid"
+                            style="margin: auto;">
+                          <div class="card-body text-center">
+                            <h5 class="card-title">Nhà giả kim</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card mb-2 border-0">
+                          <img src="image\11.jpg" class="card-img-top img-fluid"
+                            style="margin: auto;">
+                          <div class="card-body text-center">
+                            <h5 class="card-title">Đắc nhân tâm</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card mb-2 border-0">
+                          <img src="image\12.jpg" class="card-img-top img-fluid"
+                            style="margin: auto;">
+                          <div class="card-body text-center">
+                            <h5 class="card-title">Đọc vị bất kì ai</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <h2>BÌNH LUẬN</h2>
+            <hr>
+            <h4>544 bình Luận </h4>
+            <br><br><br>
+
+          </div>
+        </div>
+
+        <script>
+
+        $(document).ready(function () {
+            $("#productSlider").on("mousedown", function (e) {
+                if (e.which === 1) {
+                    var startX = e.pageX;
+                    $(this).on("mousemove", function (e) {
+                        var diffX = e.pageX - startX;
+                        if (Math.abs(diffX) > 50) {
+                            if (diffX > 0) {
+                                $(this).carousel("prev");
+                            } else {
+                                $(this).carousel("next");
+                            }
+                            $(this).off("mousemove");
+                        }
+                    });
+                }
+            }).on("mouseup", function () {
+                $(this).off("mousemove");
+            });
+        });
+    </script>
+      </body>
+
+    </html>
